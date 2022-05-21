@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/CSS/normalize.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-info">
+                <a class="logo" href="#">
+                    <img src="./assets/images/logo.png" width="245" height="45" alt="logo of Breakably Ecology">
+                </a>
+                <div class="user-info">
+                    <a href="tel:89209994350" class="call-us" >
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.4999 19.75H17.3724C2.63494 18.9025 0.542441 6.4675 0.249941 2.6725C0.226373 2.37744 0.261258 2.08062 0.352598 1.79906C0.443937 1.5175 0.589936 1.25673 0.78223 1.03169C0.974523 0.80665 1.20933 0.621766 1.4732 0.48763C1.73707 0.353493 2.02481 0.272741 2.31994 0.250001H6.45244C6.75286 0.24971 7.04644 0.339633 7.29517 0.508122C7.54389 0.676611 7.73629 0.915903 7.84744 1.195L8.98744 4C9.09721 4.27266 9.12444 4.57156 9.06578 4.85957C9.00711 5.14758 8.86512 5.412 8.65744 5.62L7.05994 7.2325C7.30948 8.65056 7.98858 9.95775 9.00536 10.9772C10.0221 11.9967 11.3275 12.6792 12.7449 12.9325L14.3724 11.32C14.5836 11.1146 14.8505 10.9759 15.1399 10.9213C15.4293 10.8666 15.7284 10.8983 15.9999 11.0125L18.8274 12.145C19.1023 12.2597 19.3369 12.4536 19.5012 12.702C19.6654 12.9504 19.752 13.2422 19.7499 13.54V17.5C19.7499 18.0967 19.5129 18.669 19.0909 19.091C18.669 19.5129 18.0967 19.75 17.4999 19.75ZM2.49994 1.75C2.30103 1.75 2.11026 1.82902 1.96961 1.96967C1.82896 2.11032 1.74994 2.30109 1.74994 2.5V2.56C2.09494 7 4.30744 17.5 17.4549 18.25C17.5535 18.2561 17.6522 18.2427 17.7456 18.2105C17.8389 18.1783 17.925 18.1281 17.9988 18.0626C18.0727 17.9971 18.1329 17.9176 18.176 17.8288C18.2191 17.74 18.2442 17.6436 18.2499 17.545V13.54L15.4224 12.4075L13.2699 14.545L12.9099 14.5C6.38494 13.6825 5.49994 7.1575 5.49994 7.09L5.45494 6.73L7.58494 4.5775L6.45994 1.75H2.49994Z" fill="#333333"></path>
+                        </svg>
+                        <span>8 920 999 43 50</span>
+                    </a>
+                    <a href="#" class="shopping-card">
+                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.59729 0.138735L1.47048 0.125472C1.009 0.108602 0.594585 0.434951 0.513643 0.902618L0.500381 1.02943C0.483511 1.4909 0.80986 1.90532 1.27753 1.98627L3.16378 2.3125L4.30694 15.9322L4.3306 16.1369C4.5606 17.6899 5.89641 18.8575 7.48741 18.8575H21.1274L21.3328 18.851C22.8282 18.7555 24.0682 17.6246 24.2864 16.1223L25.4727 7.92427L25.4932 7.73596C25.6024 6.23712 24.415 4.93625 22.8862 4.93625H5.26503L4.97162 1.43409L4.94951 1.29552C4.86396 0.935116 4.57098 0.653411 4.19729 0.588735L1.59729 0.138735ZM7.34231 16.9746C6.72322 16.9068 6.22811 16.4097 6.17523 15.7758L5.42235 6.81125H22.886L22.9962 6.81935C23.3909 6.87803 23.676 7.24712 23.6169 7.65581L22.4306 15.8532L22.4009 15.9998C22.2504 16.573 21.7311 16.9825 21.1272 16.9825H7.48723L7.34231 16.9746ZM5.38533 22.7316C5.38533 21.6865 6.23242 20.8379 7.27783 20.8379C8.3231 20.8379 9.17158 21.6864 9.17158 22.7316C9.17158 23.777 8.32296 24.6241 7.27783 24.6241C6.23256 24.6241 5.38533 23.7769 5.38533 22.7316ZM19.4497 22.7316C19.4497 21.6864 20.2982 20.8379 21.3435 20.8379C22.3887 20.8379 23.2372 21.6864 23.2372 22.7316C23.2372 23.777 22.3886 24.6241 21.3435 24.6241C20.2983 24.6241 19.4497 23.777 19.4497 22.7316ZM20.0604 10.4937C20.0604 9.97598 19.6406 9.55625 19.1229 9.55625H15.6566L15.5294 9.5648C15.0718 9.62688 14.7191 10.0191 14.7191 10.4937C14.7191 11.0115 15.1389 11.4312 15.6566 11.4312H19.1229L19.2501 11.4227C19.7077 11.3606 20.0604 10.9684 20.0604 10.4937Z" fill="#333333"></path>
+                        </svg>
+                        <p class="buy">
+                            2
+                        </p>
+                    </a>
+                    <a href="#" class="account">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3465 0.499863C6.6596 0.499863 3.69901 3.46 3.69901 7.14736C3.69901 10.8339 6.66 13.7949 10.3465 13.7949C14.0339 13.7949 16.994 10.8343 16.994 7.14736C16.994 3.4596 14.0343 0.499863 10.3465 0.499863ZM10.3465 2.37486C12.9987 2.37486 15.119 4.49513 15.119 7.14736C15.119 9.79881 12.9983 11.9199 10.3465 11.9199C7.69553 11.9199 5.57401 9.79835 5.57401 7.14736C5.57401 4.49559 7.69507 2.37486 10.3465 2.37486ZM10.3466 16.0702C4.0591 16.0702 0.500366 17.2633 0.500366 20.644C0.500366 24.0284 4.0749 25.244 10.3466 25.244L11.151 25.2371C16.9354 25.136 20.1929 23.9031 20.1929 20.6702C20.1929 17.3594 16.7721 16.1241 10.7518 16.072L10.3466 16.0702ZM10.3466 17.9452C15.5984 17.9452 18.3179 18.87 18.3179 20.6702C18.3179 22.4593 15.6051 23.369 10.3466 23.369C5.09478 23.369 2.37537 22.4442 2.37537 20.644C2.37537 18.9026 4.94207 17.995 9.92572 17.9472L10.3466 17.9452ZM22.0048 7.89886C22.4795 7.89886 22.8717 8.25155 22.9338 8.70915L22.9423 8.83636V10.405H24.5625C25.0803 10.405 25.5 10.8247 25.5 11.3425C25.5 11.8171 25.1473 12.2093 24.6897 12.2714L24.5625 12.28H22.9423V13.8489C22.9423 14.3666 22.5226 14.7864 22.0048 14.7864C21.5302 14.7864 21.138 14.4337 21.0759 13.9761L21.0673 13.8489V12.28H19.45C18.9322 12.28 18.5125 11.8602 18.5125 11.3425C18.5125 10.8679 18.8652 10.4756 19.3228 10.4135L19.45 10.405H21.0673V8.83636C21.0673 8.31859 21.4871 7.89886 22.0048 7.89886Z" fill="#333333"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="header-search">
+                <nav class="nav">
+                    <a class="nav-link active" href="#">Каталог
+                        <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.750004 0.625004C0.896037 0.624719 1.03756 0.675578 1.15 0.768754L4.5 3.56875L7.85626 0.868755C7.92019 0.816839 7.99375 0.778069 8.07271 0.754674C8.15167 0.731279 8.23448 0.72372 8.31637 0.732432C8.39826 0.741144 8.47763 0.765955 8.5499 0.805438C8.62217 0.844922 8.68593 0.8983 8.73751 0.962504C8.78942 1.02643 8.82819 1.09999 8.85159 1.17896C8.87498 1.25792 8.88254 1.34073 8.87383 1.42262C8.86512 1.50451 8.84031 1.58388 8.80082 1.65615C8.76134 1.72842 8.70796 1.79218 8.64376 1.84375L4.89375 4.8625C4.78192 4.95443 4.64164 5.00468 4.49688 5.00468C4.35211 5.00468 4.21184 4.95443 4.1 4.8625L0.350004 1.7375C0.286718 1.68504 0.234404 1.6206 0.196059 1.54788C0.157713 1.47516 0.13409 1.3956 0.126542 1.31374C0.118995 1.23188 0.127673 1.14933 0.152075 1.07083C0.176478 0.992326 0.216127 0.919409 0.268753 0.856254C0.326912 0.784558 0.400233 0.726637 0.483443 0.686652C0.566653 0.646668 0.657688 0.625614 0.750004 0.625004Z" fill="#4F4F4F"/>
+                        </svg>
+                    </a>
+                    <a class="nav-link" href="#">О проекте</a>
+                    <a class="nav-link" href="#">Птицы</a>
+                    <a class="nav-link" href="#">Пожертвования</a>
+                </nav>
+                <div class="search">
+                    <input id="search" type="search" name="search" placeholder="Поиск">
+                    <label for="search">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5144 2.5C7.87904 2.5 2.5 7.76024 2.5 14.2491C2.5 20.7379 7.87904 25.9982 14.5144 25.9982C17.3523 25.9982 19.9604 25.0359 22.0162 23.4269L25.9212 27.2358L26.0251 27.3233C26.3877 27.5857 26.9017 27.5558 27.2297 27.2341C27.5906 26.8803 27.5898 26.3074 27.228 25.9545L23.3689 22.1904C25.3312 20.0993 26.5289 17.311 26.5289 14.2491C26.5289 7.76024 21.1498 2.5 14.5144 2.5ZM14.5144 4.30968C20.1278 4.30968 24.6783 8.7597 24.6783 14.2491C24.6783 19.7385 20.1278 24.1885 14.5144 24.1885C8.90108 24.1885 4.35055 19.7385 4.35055 14.2491C4.35055 8.7597 8.90108 4.30968 14.5144 4.30968Z" fill="#333333"></path>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="section-wrapper">        
+        <section class="section-catalog">
+            <h2 class="section-catalog-name">
+                Каталог
+            </h2>
+            <div class="section-catalog-cards">
+                <div class="section-catalog-card">
+                    <div class="section-catalog-card-promo">
+                        <div class="section-catalog-card-photo">
+                            <img width="387" height="211" src="./assets/images/img-catalog-card-1.jpg" alt="Фото кормушки">
+                        </div>
+                        <h3 class="section-catalog-card-name">
+                            Кормушки
+                        </h3>
+                    </div>
+                    <div class="section-catalog-card-detail-cont">
+                        <a href="#" class="section-catalog-card-detail-link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="section-catalog-card">
+                    <div class="section-catalog-card-promo">
+                        <div class="section-catalog-card-photo">
+                            <img width="387" height="211" src="./assets/images/img-catalog-card-2.jpg" alt="Фото миксов">
+                        </div>
+                        <h3 class="section-catalog-card-name">
+                            Готовые миксы
+                        </h3>
+                        <p class="section-catalog-card-text">
+                            (смеси кормов)
+                        </p>
+                    </div>
+                    <div class="section-catalog-card-detail-cont">
+                        <a href="#" class="section-catalog-card-detail-link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="section-catalog-card">
+                    <div class="section-catalog-card-promo">
+                        <div class="section-catalog-card-photo">
+                            <img width="387" height="211" src="./assets/images/img-catalog-card-3.jpg" alt="Фото кормов">
+                        </div>
+                        <h3 class="section-catalog-card-name">
+                            Отдельные виды кормов
+                        </h3>
+                        <p class="section-catalog-card-text">
+                            (зерен)
+                        </p>
+                    </div>
+                    <div class="section-catalog-card-detail-cont">
+                        <a href="#" class="section-catalog-card-detail-link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-mix">
+            <div class="section-mix-name-cont">
+                <h2 class="section-mix-name">
+                    Готовые миксы
+                </h2>
+                <button class="section-mix-selects">
+                    <span class="section-mix-button-more">
+                        Ещё
+                    </span>
+                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.749989 0.625019C0.896022 0.624734 1.03754 0.675593 1.14999 0.768769L4.49999 3.56877L7.85624 0.86877C7.92017 0.816854 7.99373 0.778084 8.07269 0.754689C8.15165 0.731294 8.23446 0.723736 8.31635 0.732448C8.39825 0.741159 8.47761 0.76597 8.54988 0.805454C8.62216 0.844937 8.68591 0.898315 8.73749 0.96252C8.78941 1.02645 8.82818 1.10001 8.85157 1.17897C8.87497 1.25793 8.88252 1.34074 8.87381 1.42263C8.8651 1.50453 8.84029 1.58389 8.80081 1.65616C8.76132 1.72844 8.70794 1.79219 8.64374 1.84377L4.89374 4.86252C4.78191 4.95445 4.64163 5.0047 4.49686 5.0047C4.3521 5.0047 4.21182 4.95445 4.09999 4.86252L0.349989 1.73752C0.286702 1.68505 0.234389 1.62061 0.196043 1.5479C0.157698 1.47518 0.134075 1.39561 0.126527 1.31375C0.11898 1.23189 0.127657 1.14935 0.15206 1.07084C0.176463 0.992341 0.216112 0.919424 0.268738 0.856269C0.326897 0.784573 0.400217 0.726652 0.483427 0.686668C0.566637 0.646683 0.657672 0.62563 0.749989 0.625019Z" fill="#219653"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="section-mix-cards">
+                <div class="section-mix-card">
+                    <div class="section-mix-card-promo">
+                        <div class="section-mix-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-mix-card.jpg" alt="Фото готового микса">
+                        </div>
+                        <h3 class="section-mix-card-name">
+                            PADOVAN OVOMIX GOLD ROSSO
+                        </h3>
+                        <p class="section-mix-card-text">
+                            Корм для птиц
+                        </p>
+                        <p class="section-mix-card-price">
+                            1000 руб.
+                        </p>
+                        <div class="section-mix-radio-one">
+                            <input type="radio" name="mix-pack-one" id="mix-pack-one-200" value="200" checked>
+                            <label for="mix-pack-one-200">200 г</label>
+                            <input type="radio" name="mix-pack-one" id="mix-pack-one-400" value="400">
+                            <label for="mix-pack-one-400">400 г</label>
+                            <input type="radio" name="mix-pack-one" id="mix-pack-one-800" value="800">
+                            <label for="mix-pack-one-800">800 г</label>
+                            <input type="radio" name="mix-pack-one" id="mix-pack-one-1000" value="1000">
+                            <label for="mix-pack-one-1000">1 кг</label>
+                        </div>
+                    </div>
+                    <div class="section-mix-card-detail-cont">
+                        <a href="#" class="section-mix-card-detail-link">Подробнее</a>
+                        <a href="#" class="section-mix-card-buy">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.23757 0.824876L1.12344 0.81294C0.70811 0.797757 0.335133 1.09147 0.262285 1.51237L0.250349 1.6265C0.235166 2.04183 0.52888 2.41481 0.94978 2.48766L2.64741 2.78127L3.67626 15.039L3.69755 15.2232C3.90455 16.6209 5.10678 17.6718 6.53867 17.6718H18.8147L18.9996 17.6659C20.3454 17.5799 21.4614 16.5621 21.6578 15.2101L22.7255 7.83185L22.7439 7.66238C22.8422 6.31342 21.7735 5.14264 20.3975 5.14264H4.53854L4.27447 1.99069L4.25457 1.86598C4.17757 1.54162 3.91389 1.28809 3.57757 1.22988L1.23757 0.824876ZM6.40808 15.9772C5.8509 15.9162 5.40531 15.4687 5.35772 14.8982L4.68012 6.83014H20.3974L20.4966 6.83743C20.8518 6.89024 21.1084 7.22242 21.0552 7.59025L19.9876 14.9679L19.9608 15.0998C19.8254 15.6157 19.358 15.9843 18.8145 15.9843H6.53851L6.40808 15.9772ZM4.6468 21.1585C4.6468 20.2179 5.40918 19.4541 6.35005 19.4541C7.29079 19.4541 8.05443 20.2177 8.05443 21.1585C8.05443 22.0993 7.29067 22.8617 6.35005 22.8617C5.40931 22.8617 4.6468 22.0992 4.6468 21.1585ZM17.3048 21.1585C17.3048 20.2177 18.0684 19.4541 19.0091 19.4541C19.9499 19.4541 20.7135 20.2177 20.7135 21.1585C20.7135 22.0993 19.9497 22.8617 19.0091 22.8617C18.0685 22.8617 17.3048 22.0993 17.3048 21.1585ZM17.8543 10.1444C17.8543 9.6784 17.4766 9.30064 17.0106 9.30064H13.891L13.7765 9.30834C13.3646 9.36421 13.0472 9.71723 13.0472 10.1444C13.0472 10.6104 13.425 10.9881 13.891 10.9881H17.0106L17.1251 10.9804C17.5369 10.9246 17.8543 10.5715 17.8543 10.1444Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="section-mix-card">
+                    <p class="section-mix-card-new">
+                        Новинка
+                    </p>
+                    <div class="section-mix-card-promo">
+                        <div class="section-mix-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-mix-card.jpg" alt="Фото готового микса">
+                        </div>
+                        <h3 class="section-mix-card-name">
+                            PADOVAN OVOMIX GOLD ROSSO
+                        </h3>
+                        <p class="section-mix-card-text">
+                            Корм для птиц
+                        </p>
+                        <p class="section-mix-card-price">
+                            1000 руб.
+                        </p>
+                        <div class="section-mix-radio-two">
+                            <input type="radio" name="mix-pack-two" id="mix-pack-two-200" value="200" checked>
+                            <label for="mix-pack-two-200">200 г</label>
+                            <input type="radio" name="mix-pack-two" id="mix-pack-two-400" value="400">
+                            <label for="mix-pack-two-400">400 г</label>
+                            <input type="radio" name="mix-pack-two" id="mix-pack-two-800" value="800">
+                            <label for="mix-pack-two-800">800 г</label>
+                            <input type="radio" name="mix-pack-two" id="mix-pack-two-1000" value="1000">
+                            <label for="mix-pack-two-1000">1 кг</label>
+                        </div>
+                    </div>
+                    <div class="section-mix-card-detail-cont">
+                        <a href="#" class="section-mix-card-detail-link">Подробнее</a>
+                        <a href="#" class="section-mix-card-buy">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.23757 0.824876L1.12344 0.81294C0.70811 0.797757 0.335133 1.09147 0.262285 1.51237L0.250349 1.6265C0.235166 2.04183 0.52888 2.41481 0.94978 2.48766L2.64741 2.78127L3.67626 15.039L3.69755 15.2232C3.90455 16.6209 5.10678 17.6718 6.53867 17.6718H18.8147L18.9996 17.6659C20.3454 17.5799 21.4614 16.5621 21.6578 15.2101L22.7255 7.83185L22.7439 7.66238C22.8422 6.31342 21.7735 5.14264 20.3975 5.14264H4.53854L4.27447 1.99069L4.25457 1.86598C4.17757 1.54162 3.91389 1.28809 3.57757 1.22988L1.23757 0.824876ZM6.40808 15.9772C5.8509 15.9162 5.40531 15.4687 5.35772 14.8982L4.68012 6.83014H20.3974L20.4966 6.83743C20.8518 6.89024 21.1084 7.22242 21.0552 7.59025L19.9876 14.9679L19.9608 15.0998C19.8254 15.6157 19.358 15.9843 18.8145 15.9843H6.53851L6.40808 15.9772ZM4.6468 21.1585C4.6468 20.2179 5.40918 19.4541 6.35005 19.4541C7.29079 19.4541 8.05443 20.2177 8.05443 21.1585C8.05443 22.0993 7.29067 22.8617 6.35005 22.8617C5.40931 22.8617 4.6468 22.0992 4.6468 21.1585ZM17.3048 21.1585C17.3048 20.2177 18.0684 19.4541 19.0091 19.4541C19.9499 19.4541 20.7135 20.2177 20.7135 21.1585C20.7135 22.0993 19.9497 22.8617 19.0091 22.8617C18.0685 22.8617 17.3048 22.0993 17.3048 21.1585ZM17.8543 10.1444C17.8543 9.6784 17.4766 9.30064 17.0106 9.30064H13.891L13.7765 9.30834C13.3646 9.36421 13.0472 9.71723 13.0472 10.1444C13.0472 10.6104 13.425 10.9881 13.891 10.9881H17.0106L17.1251 10.9804C17.5369 10.9246 17.8543 10.5715 17.8543 10.1444Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="section-mix-card">
+                    <p class="section-mix-card-new">
+                        Новинка
+                    </p>
+                    <div class="section-mix-card-promo">
+                        <div class="section-mix-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-mix-card.jpg" alt="Фото готового микса">
+                        </div>
+                        <h3 class="section-mix-card-name">
+                            PADOVAN OVOMIX GOLD ROSSO
+                        </h3>
+                        <p class="section-mix-card-text">
+                            Корм для птиц
+                        </p>
+                        <p class="section-mix-card-price">
+                            1000 руб.
+                        </p>
+                        <div class="section-mix-radio-three">
+                            <input type="radio" name="mix-pack-three" id="mix-pack-three-200" value="200" checked>
+                            <label for="mix-pack-three-200">200 г</label>
+                            <input type="radio" name="mix-pack-three" id="mix-pack-three-400" value="400">
+                            <label for="mix-pack-three-400">400 г</label>
+                            <input type="radio" name="mix-pack-three" id="mix-pack-three-800" value="800">
+                            <label for="mix-pack-three-800">800 г</label>
+                            <input type="radio" name="mix-pack-three" id="mix-pack-three-1000" value="1000">
+                            <label for="mix-pack-three-1000">1 кг</label>
+                        </div>
+                    </div>
+                    <div class="section-mix-card-detail-cont">
+                        <a href="#" class="section-mix-card-detail-link">Подробнее</a>
+                        <a href="#" class="section-mix-card-buy">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.23757 0.824876L1.12344 0.81294C0.70811 0.797757 0.335133 1.09147 0.262285 1.51237L0.250349 1.6265C0.235166 2.04183 0.52888 2.41481 0.94978 2.48766L2.64741 2.78127L3.67626 15.039L3.69755 15.2232C3.90455 16.6209 5.10678 17.6718 6.53867 17.6718H18.8147L18.9996 17.6659C20.3454 17.5799 21.4614 16.5621 21.6578 15.2101L22.7255 7.83185L22.7439 7.66238C22.8422 6.31342 21.7735 5.14264 20.3975 5.14264H4.53854L4.27447 1.99069L4.25457 1.86598C4.17757 1.54162 3.91389 1.28809 3.57757 1.22988L1.23757 0.824876ZM6.40808 15.9772C5.8509 15.9162 5.40531 15.4687 5.35772 14.8982L4.68012 6.83014H20.3974L20.4966 6.83743C20.8518 6.89024 21.1084 7.22242 21.0552 7.59025L19.9876 14.9679L19.9608 15.0998C19.8254 15.6157 19.358 15.9843 18.8145 15.9843H6.53851L6.40808 15.9772ZM4.6468 21.1585C4.6468 20.2179 5.40918 19.4541 6.35005 19.4541C7.29079 19.4541 8.05443 20.2177 8.05443 21.1585C8.05443 22.0993 7.29067 22.8617 6.35005 22.8617C5.40931 22.8617 4.6468 22.0992 4.6468 21.1585ZM17.3048 21.1585C17.3048 20.2177 18.0684 19.4541 19.0091 19.4541C19.9499 19.4541 20.7135 20.2177 20.7135 21.1585C20.7135 22.0993 19.9497 22.8617 19.0091 22.8617C18.0685 22.8617 17.3048 22.0993 17.3048 21.1585ZM17.8543 10.1444C17.8543 9.6784 17.4766 9.30064 17.0106 9.30064H13.891L13.7765 9.30834C13.3646 9.36421 13.0472 9.71723 13.0472 10.1444C13.0472 10.6104 13.425 10.9881 13.891 10.9881H17.0106L17.1251 10.9804C17.5369 10.9246 17.8543 10.5715 17.8543 10.1444Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="section-mix-card">
+                    <div class="section-mix-card-promo">
+                        <div class="section-mix-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-mix-card.jpg" alt="Фото готового микса">
+                        </div>
+                        <h3 class="section-mix-card-name">
+                            PADOVAN OVOMIX GOLD ROSSO
+                        </h3>
+                        <p class="section-mix-card-text">
+                            Корм для птиц
+                        </p>
+                        <p class="section-mix-card-price">
+                            1000 руб.
+                        </p>
+                        <div class="section-mix-radio-four">
+                            <input type="radio" name="mix-pack-four" id="mix-pack-four-200" value="200">
+                            <label for="mix-pack-four-200">200 г</label>
+                            <input type="radio" name="mix-pack-four" id="mix-pack-four-400" value="400">
+                            <label for="mix-pack-four-400">400 г</label>
+                            <input type="radio" name="mix-pack-four" id="mix-pack-four-800" value="800">
+                            <label for="mix-pack-four-800">800 г</label>
+                            <input type="radio" name="mix-pack-four" id="mix-pack-four-1000" value="1000" checked>
+                            <label for="mix-pack-four-1000">1 кг</label>
+                        </div>
+                    </div>
+                    <div class="section-mix-card-detail-cont">
+                        <a href="#" class="section-mix-card-detail-link">Подробнее</a>
+                        <a href="#" class="section-mix-card-buy">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.23757 0.824876L1.12344 0.81294C0.70811 0.797757 0.335133 1.09147 0.262285 1.51237L0.250349 1.6265C0.235166 2.04183 0.52888 2.41481 0.94978 2.48766L2.64741 2.78127L3.67626 15.039L3.69755 15.2232C3.90455 16.6209 5.10678 17.6718 6.53867 17.6718H18.8147L18.9996 17.6659C20.3454 17.5799 21.4614 16.5621 21.6578 15.2101L22.7255 7.83185L22.7439 7.66238C22.8422 6.31342 21.7735 5.14264 20.3975 5.14264H4.53854L4.27447 1.99069L4.25457 1.86598C4.17757 1.54162 3.91389 1.28809 3.57757 1.22988L1.23757 0.824876ZM6.40808 15.9772C5.8509 15.9162 5.40531 15.4687 5.35772 14.8982L4.68012 6.83014H20.3974L20.4966 6.83743C20.8518 6.89024 21.1084 7.22242 21.0552 7.59025L19.9876 14.9679L19.9608 15.0998C19.8254 15.6157 19.358 15.9843 18.8145 15.9843H6.53851L6.40808 15.9772ZM4.6468 21.1585C4.6468 20.2179 5.40918 19.4541 6.35005 19.4541C7.29079 19.4541 8.05443 20.2177 8.05443 21.1585C8.05443 22.0993 7.29067 22.8617 6.35005 22.8617C5.40931 22.8617 4.6468 22.0992 4.6468 21.1585ZM17.3048 21.1585C17.3048 20.2177 18.0684 19.4541 19.0091 19.4541C19.9499 19.4541 20.7135 20.2177 20.7135 21.1585C20.7135 22.0993 19.9497 22.8617 19.0091 22.8617C18.0685 22.8617 17.3048 22.0993 17.3048 21.1585ZM17.8543 10.1444C17.8543 9.6784 17.4766 9.30064 17.0106 9.30064H13.891L13.7765 9.30834C13.3646 9.36421 13.0472 9.71723 13.0472 10.1444C13.0472 10.6104 13.425 10.9881 13.891 10.9881H17.0106L17.1251 10.9804C17.5369 10.9246 17.8543 10.5715 17.8543 10.1444Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <section class="section-bird">
+            <div class="section-bird-name-cont">
+                <h2 class="section-bird-name">
+                    Виды птиц
+                </h2>
+                <button class="section-bird-selects">
+                    <span class="section-bird-button-more">
+                        Ещё
+                    </span>
+                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.749989 0.625019C0.896022 0.624734 1.03754 0.675593 1.14999 0.768769L4.49999 3.56877L7.85624 0.86877C7.92017 0.816854 7.99373 0.778084 8.07269 0.754689C8.15165 0.731294 8.23446 0.723736 8.31635 0.732448C8.39825 0.741159 8.47761 0.76597 8.54988 0.805454C8.62216 0.844937 8.68591 0.898315 8.73749 0.96252C8.78941 1.02645 8.82818 1.10001 8.85157 1.17897C8.87497 1.25793 8.88252 1.34074 8.87381 1.42263C8.8651 1.50453 8.84029 1.58389 8.80081 1.65616C8.76132 1.72844 8.70794 1.79219 8.64374 1.84377L4.89374 4.86252C4.78191 4.95445 4.64163 5.0047 4.49686 5.0047C4.3521 5.0047 4.21182 4.95445 4.09999 4.86252L0.349989 1.73752C0.286702 1.68505 0.234389 1.62061 0.196043 1.5479C0.157698 1.47518 0.134075 1.39561 0.126527 1.31375C0.11898 1.23189 0.127657 1.14935 0.15206 1.07084C0.176463 0.992341 0.216112 0.919424 0.268738 0.856269C0.326897 0.784573 0.400217 0.726652 0.483427 0.686668C0.566637 0.646683 0.657672 0.62563 0.749989 0.625019Z" fill="#219653"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="section-bird-cards">
+                <div class="section-bird-card">
+                    <div class="section-bird-card-promo">
+                        <div class="section-bird-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-bird-card.jpg" alt="Фото птицы">
+                        </div>
+                        <h3 class="section-bird-card-name">
+                            Домовый воробей
+                        </h3>
+                        <p class="section-bird-card-text">
+                            68
+                        </p>
+                    </div>
+                    <div class="section-bird-card-detail-cont">
+                        <a href="#" class="section-bird-card-detail-link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="section-bird-card">
+                    <div class="section-bird-card-promo">
+                        <div class="section-bird-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-bird-card.jpg" alt="Фото птицы">
+                        </div>
+                        <h3 class="section-bird-card-name">                            
+                            Домовый воробей
+                            <!-- Домовый воробей
+                            Домовый воробей
+                            Домовый воробей
+                            Домовый воробей
+                            Домовый воробей
+                            Домовый воробей
+                            Домовый воробей
+                            Домовый воробей
+                            Домовый воробей
+                            Домовый воробей
+                            Домовый воробей -->
+                        </h3>
+                        <p class="section-bird-card-text">
+                            68
+                        </p>
+                    </div>
+                    <div class="section-bird-card-detail-cont">
+                        <a href="#" class="section-bird-card-detail-link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="section-bird-card">
+                    <div class="section-bird-card-promo">
+                        <div class="section-bird-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-bird-card.jpg" alt="Фото птицы">
+                        </div>
+                        <h3 class="section-bird-card-name">
+                            Домовый воробей
+                        </h3>
+                        <p class="section-bird-card-text">
+                            68
+                        </p>
+                    </div>
+                    <div class="section-bird-card-detail-cont">
+                        <a href="#" class="section-bird-card-detail-link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="section-bird-card">
+                    <div class="section-bird-card-promo">
+                        <div class="section-bird-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-bird-card.jpg" alt="Фото птицы">
+                        </div>
+                        <h3 class="section-bird-card-name">
+                            Домовый воробей
+                        </h3>
+                        <p class="section-bird-card-text">
+                            68
+                        </p>
+                    </div>
+                    <div class="section-bird-card-detail-cont">
+                        <a href="#" class="section-bird-card-detail-link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-grains">
+            <div class="section-grains-name-cont">
+                <h2 class="section-grains-name">
+                    Зёрна
+                </h2>
+                <button class="section-grains-selects">
+                    <span class="section-grains-button-more">
+                        Ещё
+                    </span>
+                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.749989 0.625019C0.896022 0.624734 1.03754 0.675593 1.14999 0.768769L4.49999 3.56877L7.85624 0.86877C7.92017 0.816854 7.99373 0.778084 8.07269 0.754689C8.15165 0.731294 8.23446 0.723736 8.31635 0.732448C8.39825 0.741159 8.47761 0.76597 8.54988 0.805454C8.62216 0.844937 8.68591 0.898315 8.73749 0.96252C8.78941 1.02645 8.82818 1.10001 8.85157 1.17897C8.87497 1.25793 8.88252 1.34074 8.87381 1.42263C8.8651 1.50453 8.84029 1.58389 8.80081 1.65616C8.76132 1.72844 8.70794 1.79219 8.64374 1.84377L4.89374 4.86252C4.78191 4.95445 4.64163 5.0047 4.49686 5.0047C4.3521 5.0047 4.21182 4.95445 4.09999 4.86252L0.349989 1.73752C0.286702 1.68505 0.234389 1.62061 0.196043 1.5479C0.157698 1.47518 0.134075 1.39561 0.126527 1.31375C0.11898 1.23189 0.127657 1.14935 0.15206 1.07084C0.176463 0.992341 0.216112 0.919424 0.268738 0.856269C0.326897 0.784573 0.400217 0.726652 0.483427 0.686668C0.566637 0.646683 0.657672 0.62563 0.749989 0.625019Z" fill="#219653"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="section-grains-cards">
+                <div class="section-grains-card">
+                    <div class="section-grains-card-promo">
+                        <div class="section-grains-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-grains-card.jpg" alt="Фото зёрен">
+                        </div>
+                        <h3 class="section-grains-card-name">
+                            Корм для птиц RIO Линька
+                        </h3>
+                        <p class="section-grains-card-text">
+                            для волнистых попугайчиков
+                        </p>
+                        <p class="section-grains-card-price">
+                            1000 руб.
+                        </p>
+                        <div class="section-grains-radio-one">
+                            <input type="radio" name="grains-pack-one" id="grains-pack-one-200" value="200" checked>
+                            <label for="grains-pack-one-200">200 г</label>
+                            <input type="radio" name="grains-pack-one" id="grains-pack-one-400" value="400">
+                            <label for="grains-pack-one-400">400 г</label>
+                            <input type="radio" name="grains-pack-one" id="grains-pack-one-800" value="800">
+                            <label for="grains-pack-one-800">800 г</label>
+                            <input type="radio" name="grains-pack-one" id="grains-pack-one-1000" value="1000">
+                            <label for="grains-pack-one-1000">1 кг</label>
+                        </div>
+                    </div>
+                    <div class="section-grains-card-detail-cont">
+                        <a href="#" class="section-grains-card-detail-link">Подробнее</a>
+                        <a href="#" class="section-grains-card-buy">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.23757 0.824876L1.12344 0.81294C0.70811 0.797757 0.335133 1.09147 0.262285 1.51237L0.250349 1.6265C0.235166 2.04183 0.52888 2.41481 0.94978 2.48766L2.64741 2.78127L3.67626 15.039L3.69755 15.2232C3.90455 16.6209 5.10678 17.6718 6.53867 17.6718H18.8147L18.9996 17.6659C20.3454 17.5799 21.4614 16.5621 21.6578 15.2101L22.7255 7.83185L22.7439 7.66238C22.8422 6.31342 21.7735 5.14264 20.3975 5.14264H4.53854L4.27447 1.99069L4.25457 1.86598C4.17757 1.54162 3.91389 1.28809 3.57757 1.22988L1.23757 0.824876ZM6.40808 15.9772C5.8509 15.9162 5.40531 15.4687 5.35772 14.8982L4.68012 6.83014H20.3974L20.4966 6.83743C20.8518 6.89024 21.1084 7.22242 21.0552 7.59025L19.9876 14.9679L19.9608 15.0998C19.8254 15.6157 19.358 15.9843 18.8145 15.9843H6.53851L6.40808 15.9772ZM4.6468 21.1585C4.6468 20.2179 5.40918 19.4541 6.35005 19.4541C7.29079 19.4541 8.05443 20.2177 8.05443 21.1585C8.05443 22.0993 7.29067 22.8617 6.35005 22.8617C5.40931 22.8617 4.6468 22.0992 4.6468 21.1585ZM17.3048 21.1585C17.3048 20.2177 18.0684 19.4541 19.0091 19.4541C19.9499 19.4541 20.7135 20.2177 20.7135 21.1585C20.7135 22.0993 19.9497 22.8617 19.0091 22.8617C18.0685 22.8617 17.3048 22.0993 17.3048 21.1585ZM17.8543 10.1444C17.8543 9.6784 17.4766 9.30064 17.0106 9.30064H13.891L13.7765 9.30834C13.3646 9.36421 13.0472 9.71723 13.0472 10.1444C13.0472 10.6104 13.425 10.9881 13.891 10.9881H17.0106L17.1251 10.9804C17.5369 10.9246 17.8543 10.5715 17.8543 10.1444Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="section-grains-card">
+                    <div class="section-grains-card-promo">
+                        <div class="section-grains-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-grains-card.jpg" alt="Фото зёрен">
+                        </div>
+                        <h3 class="section-grains-card-name">
+                            Корм для птиц RIO Линька
+                        </h3>
+                        <p class="section-grains-card-text">
+                            для волнистых попугайчиков
+                        </p>
+                        <p class="section-grains-card-price">
+                            1000 руб.
+                        </p>
+                        <div class="section-grains-radio-two">
+                            <input type="radio" name="grains-pack-two" id="grains-pack-two-200" value="200" checked>
+                            <label for="grains-pack-two-200">200 г</label>
+                            <input type="radio" name="grains-pack-two" id="grains-pack-two-400" value="400">
+                            <label for="grains-pack-two-400">400 г</label>
+                            <input type="radio" name="grains-pack-two" id="grains-pack-two-800" value="800">
+                            <label for="grains-pack-two-800">800 г</label>
+                            <input type="radio" name="grains-pack-two" id="grains-pack-two-1000" value="1000">
+                            <label for="grains-pack-two-1000">1 кг</label>
+                        </div>
+                    </div>
+                    <div class="section-grains-card-detail-cont">
+                        <a href="#" class="section-grains-card-detail-link">Подробнее</a>
+                        <a href="#" class="section-grains-card-buy">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.23757 0.824876L1.12344 0.81294C0.70811 0.797757 0.335133 1.09147 0.262285 1.51237L0.250349 1.6265C0.235166 2.04183 0.52888 2.41481 0.94978 2.48766L2.64741 2.78127L3.67626 15.039L3.69755 15.2232C3.90455 16.6209 5.10678 17.6718 6.53867 17.6718H18.8147L18.9996 17.6659C20.3454 17.5799 21.4614 16.5621 21.6578 15.2101L22.7255 7.83185L22.7439 7.66238C22.8422 6.31342 21.7735 5.14264 20.3975 5.14264H4.53854L4.27447 1.99069L4.25457 1.86598C4.17757 1.54162 3.91389 1.28809 3.57757 1.22988L1.23757 0.824876ZM6.40808 15.9772C5.8509 15.9162 5.40531 15.4687 5.35772 14.8982L4.68012 6.83014H20.3974L20.4966 6.83743C20.8518 6.89024 21.1084 7.22242 21.0552 7.59025L19.9876 14.9679L19.9608 15.0998C19.8254 15.6157 19.358 15.9843 18.8145 15.9843H6.53851L6.40808 15.9772ZM4.6468 21.1585C4.6468 20.2179 5.40918 19.4541 6.35005 19.4541C7.29079 19.4541 8.05443 20.2177 8.05443 21.1585C8.05443 22.0993 7.29067 22.8617 6.35005 22.8617C5.40931 22.8617 4.6468 22.0992 4.6468 21.1585ZM17.3048 21.1585C17.3048 20.2177 18.0684 19.4541 19.0091 19.4541C19.9499 19.4541 20.7135 20.2177 20.7135 21.1585C20.7135 22.0993 19.9497 22.8617 19.0091 22.8617C18.0685 22.8617 17.3048 22.0993 17.3048 21.1585ZM17.8543 10.1444C17.8543 9.6784 17.4766 9.30064 17.0106 9.30064H13.891L13.7765 9.30834C13.3646 9.36421 13.0472 9.71723 13.0472 10.1444C13.0472 10.6104 13.425 10.9881 13.891 10.9881H17.0106L17.1251 10.9804C17.5369 10.9246 17.8543 10.5715 17.8543 10.1444Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="section-grains-card">
+                    <div class="section-grains-card-promo">
+                        <div class="section-grains-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-grains-card.jpg" alt="Фото зёрен">
+                        </div>
+                        <h3 class="section-grains-card-name">
+                            Корм для птиц RIO Линька
+                        </h3>
+                        <p class="section-grains-card-text">
+                            для волнистых попугайчиков
+                        </p>
+                        <p class="section-grains-card-price">
+                            1000 руб.
+                        </p>
+                        <div class="section-grains-radio-three">
+                            <input type="radio" name="grains-pack-three" id="grains-pack-three-200" value="200" checked>
+                            <label for="grains-pack-three-200">200 г</label>
+                            <input type="radio" name="grains-pack-three" id="grains-pack-three-400" value="400">
+                            <label for="grains-pack-three-400">400 г</label>
+                            <input type="radio" name="grains-pack-three" id="grains-pack-three-800" value="800">
+                            <label for="grains-pack-three-800">800 г</label>
+                            <input type="radio" name="grains-pack-three" id="grains-pack-three-1000" value="1000">
+                            <label for="grains-pack-three-1000">1 кг</label>
+                        </div>
+                    </div>
+                    <div class="section-grains-card-detail-cont">
+                        <a href="#" class="section-grains-card-detail-link">Подробнее</a>
+                        <a href="#" class="section-grains-card-buy">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.23757 0.824876L1.12344 0.81294C0.70811 0.797757 0.335133 1.09147 0.262285 1.51237L0.250349 1.6265C0.235166 2.04183 0.52888 2.41481 0.94978 2.48766L2.64741 2.78127L3.67626 15.039L3.69755 15.2232C3.90455 16.6209 5.10678 17.6718 6.53867 17.6718H18.8147L18.9996 17.6659C20.3454 17.5799 21.4614 16.5621 21.6578 15.2101L22.7255 7.83185L22.7439 7.66238C22.8422 6.31342 21.7735 5.14264 20.3975 5.14264H4.53854L4.27447 1.99069L4.25457 1.86598C4.17757 1.54162 3.91389 1.28809 3.57757 1.22988L1.23757 0.824876ZM6.40808 15.9772C5.8509 15.9162 5.40531 15.4687 5.35772 14.8982L4.68012 6.83014H20.3974L20.4966 6.83743C20.8518 6.89024 21.1084 7.22242 21.0552 7.59025L19.9876 14.9679L19.9608 15.0998C19.8254 15.6157 19.358 15.9843 18.8145 15.9843H6.53851L6.40808 15.9772ZM4.6468 21.1585C4.6468 20.2179 5.40918 19.4541 6.35005 19.4541C7.29079 19.4541 8.05443 20.2177 8.05443 21.1585C8.05443 22.0993 7.29067 22.8617 6.35005 22.8617C5.40931 22.8617 4.6468 22.0992 4.6468 21.1585ZM17.3048 21.1585C17.3048 20.2177 18.0684 19.4541 19.0091 19.4541C19.9499 19.4541 20.7135 20.2177 20.7135 21.1585C20.7135 22.0993 19.9497 22.8617 19.0091 22.8617C18.0685 22.8617 17.3048 22.0993 17.3048 21.1585ZM17.8543 10.1444C17.8543 9.6784 17.4766 9.30064 17.0106 9.30064H13.891L13.7765 9.30834C13.3646 9.36421 13.0472 9.71723 13.0472 10.1444C13.0472 10.6104 13.425 10.9881 13.891 10.9881H17.0106L17.1251 10.9804C17.5369 10.9246 17.8543 10.5715 17.8543 10.1444Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="section-grains-card">
+                    <p class="section-grains-card-sale">
+                        Скидка
+                    </p>
+                    <div class="section-grains-card-promo">
+                        <div class="section-grains-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-grains-card.jpg" alt="Фото зёрен">
+                        </div>
+                        <h3 class="section-grains-card-name">
+                            Корм для птиц RIO Линька
+                        </h3>
+                        <p class="section-grains-card-text">
+                            для волнистых попугайчиков
+                        </p>
+                        <p class="section-grains-card-price">
+                            1000 руб.
+                        </p>
+                        <div class="section-grains-radio-four">
+                            <input type="radio" name="grains-pack-four" id="grains-pack-four-200" value="200" checked>
+                            <label for="grains-pack-four-200">200 г</label>
+                            <input type="radio" name="grains-pack-four" id="grains-pack-four-400" value="400">
+                            <label for="grains-pack-four-400">400 г</label>
+                            <input type="radio" name="grains-pack-four" id="grains-pack-four-800" value="800">
+                            <label for="grains-pack-four-800">800 г</label>
+                            <input type="radio" name="grains-pack-four" id="grains-pack-four-1000" value="1000">
+                            <label for="grains-pack-four-1000">1 кг</label>
+                        </div>
+                    </div>
+                    <div class="section-grains-card-detail-cont">
+                        <a href="#" class="section-grains-card-detail-link">Подробнее</a>
+                        <a href="#" class="section-grains-card-buy">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.23757 0.824876L1.12344 0.81294C0.70811 0.797757 0.335133 1.09147 0.262285 1.51237L0.250349 1.6265C0.235166 2.04183 0.52888 2.41481 0.94978 2.48766L2.64741 2.78127L3.67626 15.039L3.69755 15.2232C3.90455 16.6209 5.10678 17.6718 6.53867 17.6718H18.8147L18.9996 17.6659C20.3454 17.5799 21.4614 16.5621 21.6578 15.2101L22.7255 7.83185L22.7439 7.66238C22.8422 6.31342 21.7735 5.14264 20.3975 5.14264H4.53854L4.27447 1.99069L4.25457 1.86598C4.17757 1.54162 3.91389 1.28809 3.57757 1.22988L1.23757 0.824876ZM6.40808 15.9772C5.8509 15.9162 5.40531 15.4687 5.35772 14.8982L4.68012 6.83014H20.3974L20.4966 6.83743C20.8518 6.89024 21.1084 7.22242 21.0552 7.59025L19.9876 14.9679L19.9608 15.0998C19.8254 15.6157 19.358 15.9843 18.8145 15.9843H6.53851L6.40808 15.9772ZM4.6468 21.1585C4.6468 20.2179 5.40918 19.4541 6.35005 19.4541C7.29079 19.4541 8.05443 20.2177 8.05443 21.1585C8.05443 22.0993 7.29067 22.8617 6.35005 22.8617C5.40931 22.8617 4.6468 22.0992 4.6468 21.1585ZM17.3048 21.1585C17.3048 20.2177 18.0684 19.4541 19.0091 19.4541C19.9499 19.4541 20.7135 20.2177 20.7135 21.1585C20.7135 22.0993 19.9497 22.8617 19.0091 22.8617C18.0685 22.8617 17.3048 22.0993 17.3048 21.1585ZM17.8543 10.1444C17.8543 9.6784 17.4766 9.30064 17.0106 9.30064H13.891L13.7765 9.30834C13.3646 9.36421 13.0472 9.71723 13.0472 10.1444C13.0472 10.6104 13.425 10.9881 13.891 10.9881H17.0106L17.1251 10.9804C17.5369 10.9246 17.8543 10.5715 17.8543 10.1444Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-feeders">
+            <div class="section-feeders-name-cont">
+                <h2 class="section-feeders-name">
+                    Кормушки
+                </h2>
+                <button class="section-feeders-selects">
+                    <span class="section-feeders-button-more">
+                        Ещё
+                    </span>
+                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.749989 0.625019C0.896022 0.624734 1.03754 0.675593 1.14999 0.768769L4.49999 3.56877L7.85624 0.86877C7.92017 0.816854 7.99373 0.778084 8.07269 0.754689C8.15165 0.731294 8.23446 0.723736 8.31635 0.732448C8.39825 0.741159 8.47761 0.76597 8.54988 0.805454C8.62216 0.844937 8.68591 0.898315 8.73749 0.96252C8.78941 1.02645 8.82818 1.10001 8.85157 1.17897C8.87497 1.25793 8.88252 1.34074 8.87381 1.42263C8.8651 1.50453 8.84029 1.58389 8.80081 1.65616C8.76132 1.72844 8.70794 1.79219 8.64374 1.84377L4.89374 4.86252C4.78191 4.95445 4.64163 5.0047 4.49686 5.0047C4.3521 5.0047 4.21182 4.95445 4.09999 4.86252L0.349989 1.73752C0.286702 1.68505 0.234389 1.62061 0.196043 1.5479C0.157698 1.47518 0.134075 1.39561 0.126527 1.31375C0.11898 1.23189 0.127657 1.14935 0.15206 1.07084C0.176463 0.992341 0.216112 0.919424 0.268738 0.856269C0.326897 0.784573 0.400217 0.726652 0.483427 0.686668C0.566637 0.646683 0.657672 0.62563 0.749989 0.625019Z" fill="#219653"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="section-feeders-cards">
+                <div class="section-feeders-card">
+                    <div class="section-feeders-card-promo">
+                        <div class="section-feeders-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-feeders-card.jpg" alt="Фото кормушки">
+                        </div>
+                        <h3 class="section-feeders-card-name">
+                            Комплект-агро "Избушка на курьих ножках"
+                        </h3>
+                        <p class="section-feeders-card-text">
+                            кормушка малая
+                        </p>
+                        <p class="section-feeders-card-price">
+                            1000 руб.
+                        </p>
+                    </div>
+                    <div class="section-feeders-card-detail-cont">
+                        <a href="#" class="section-feeders-card-detail-link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="section-feeders-card">
+                    <div class="section-feeders-card-promo">
+                        <div class="section-feeders-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-feeders-card.jpg" alt="Фото кормушки">
+                        </div>
+                        <h3 class="section-feeders-card-name">
+                            Комплект-агро "Избушка на курьих ножках"
+                        </h3>
+                        <p class="section-feeders-card-text">
+                            кормушка малая
+                        </p>
+                        <p class="section-feeders-card-price">
+                            1000 руб.
+                        </p>
+                    </div>
+                    <div class="section-feeders-card-detail-cont">
+                        <a href="#" class="section-feeders-card-detail-link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="section-feeders-card">
+                    <div class="section-feeders-card-promo">
+                        <div class="section-feeders-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-feeders-card.jpg" alt="Фото кормушки">
+                        </div>
+                        <h3 class="section-feeders-card-name">
+                            Комплект-агро "Избушка на курьих ножках"
+                        </h3>
+                        <p class="section-feeders-card-text">
+                            кормушка малая
+                        </p>
+                        <p class="section-feeders-card-price">
+                            1000 руб.
+                        </p>
+                    </div>
+                    <div class="section-feeders-card-detail-cont">
+                        <a href="#" class="section-feeders-card-detail-link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="section-feeders-card">
+                    <div class="section-feeders-card-promo">
+                        <div class="section-feeders-card-photo">
+                            <img width="275" height="227" src="./assets/images/img-feeders-card.jpg" alt="Фото кормушки">
+                        </div>
+                        <h3 class="section-feeders-card-name">
+                            Комплект-агро "Избушка на курьих ножках"
+                        </h3>
+                        <p class="section-feeders-card-text">
+                            кормушка малая
+                        </p>
+                        <p class="section-feeders-card-price">
+                            1000 руб.
+                        </p>
+                    </div>
+                    <div class="section-feeders-card-detail-cont">
+                        <a href="#" class="section-feeders-card-detail-link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>  
+    </div>
+    <section class="donation">
+        <div class="donation-wrapper">
+            <div class="donation-form">
+                <h2>
+                    Пожертвуйте на благо проекта
+                </h2>
+                <div class="donation-radio">
+                    <input type="radio" name="donation" id="one-time" value="one-time" checked>
+                    <label for="one-time"></label>
+                    <p class="donation-radio-text">
+                        Единоразовая выплата
+                    </p>
+                    <input type="radio" name="donation" id="monthly" value="monthly">
+                    <label for="monthly"></label>
+                    <p class="donation-radio-text">
+                        Ежемесячные выплаты
+                    </p>
+                </div>
+                <div class="donation-amount">
+                    <input type="text" name="amount" placeholder="Введите сумму">
+                    <a href="#" class="donation-amount-link">
+                        Пожертвовать
+                    </a>
+                </div>
+            </div>
+            <div class="select-gift">
+                <div class="select-gift-wrapper">
+                    <h4>
+                        Выберите подарок
+                    </h4>
+                    <div class="gifts-radio">
+                        <div class="select-gift-radio">
+                            <input type="radio" name="gifts" id="no-gift" value="no-gift">
+                            <label for="no-gift"></label>
+                            <p class="select-gift-radio-text">
+                                Без подарка
+                            </p>
+                        </div>
+                        <div class="select-gift-radio">
+                            <input type="radio" name="gifts" id="certificate" value="certificate" checked>
+                            <label for="certificate"></label>
+                            <p class="select-gift-radio-text">
+                                Электронный сертификат
+                            </p>
+                        </div>
+                        <div class="select-gift-radio">
+                            <input type="radio" name="gifts" id="any-product" value="any-product">
+                            <label for="any-product"></label>
+                            <p class="select-gift-radio-text">
+                                Любой товар из каталога*
+                            </p>
+                        </div>
+                    </div>
+                    <p class="select-gift-note">
+                        *товар стоимостью в половину <br/> суммы пожертвования
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-container">
+                <div class="footer-action">
+                    <a href="#" class="footer-pay">Оплата</a>
+                    <a href="#" class="footer-delivery">Доставка</a>
+                </div>
+                <div class="footer-soсial">
+                    <a href="#" class="footer-vk">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.3336 0H8.65938C1.65625 0 -0.00390625 1.66016 -0.00390625 8.66328V16.3375C-0.00390625 23.3406 1.65625 25.0008 8.65938 25.0008H16.3336C23.3367 25.0008 24.9969 23.3406 24.9969 16.3375V8.66328C24.9969 1.66016 23.3203 0 16.3336 0ZM20.1789 17.8344H18.3641C17.6766 17.8344 17.4648 17.2891 16.2281 16.0359C15.1539 14.9945 14.6781 14.8563 14.4133 14.8563C14.0391 14.8563 13.9328 14.9617 13.9328 15.475V17.1148C13.9328 17.5547 13.7945 17.8188 12.6305 17.8188C10.7055 17.8188 8.56953 16.6547 7.07188 14.4859C4.81328 11.3078 4.19531 8.92734 4.19531 8.43516C4.19531 8.17031 4.30078 7.92266 4.80938 7.92266H6.62813C7.08828 7.92266 7.26328 8.13437 7.44219 8.62656C8.34141 11.2227 9.83907 13.4969 10.457 13.4969C10.6852 13.4969 10.7906 13.3914 10.7906 12.8094V10.1281C10.7211 8.89141 10.0703 8.78516 10.0703 8.34609C10.0703 8.13437 10.2453 7.92266 10.5258 7.92266H13.3859C13.7727 7.92266 13.9148 8.13437 13.9148 8.58984V12.207C13.9148 12.5977 14.0898 12.7359 14.1953 12.7359C14.4234 12.7359 14.6188 12.5977 15.0414 12.1742C16.3477 10.7094 17.2836 8.45078 17.2836 8.45078C17.4055 8.18594 17.6172 7.93828 18.0773 7.93828H19.8961C20.4414 7.93828 20.5633 8.21875 20.4414 8.60938C20.2133 9.66719 17.9875 12.8086 17.9875 12.8086C17.7961 13.1258 17.7227 13.2641 17.9875 13.618C18.1828 13.8828 18.818 14.432 19.2406 14.9242C20.018 15.807 20.6156 16.5477 20.775 17.0602C20.9539 17.5688 20.6898 17.8336 20.1766 17.8336L20.1789 17.8344Z" fill="#E0E0E0"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-insta">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.4966 8.33156C10.2014 8.33156 8.32828 10.2047 8.32828 12.5C8.32828 14.7953 10.2014 16.6684 12.4966 16.6684C14.7919 16.6684 16.665 14.7953 16.665 12.5C16.665 10.2047 14.7919 8.33156 12.4966 8.33156ZM24.9986 12.5C24.9986 10.7738 25.0142 9.0633 24.9173 7.34026C24.8204 5.33891 24.3638 3.56271 22.9004 2.09922C21.4338 0.632607 19.6607 0.179176 17.6594 0.082235C15.9333 -0.0147055 14.2228 0.000930141 12.4998 0.000930141C10.7736 0.000930141 9.06313 -0.0147055 7.34013 0.082235C5.33881 0.179176 3.56265 0.635734 2.09918 2.09922C0.632595 3.56584 0.179172 5.33891 0.0822335 7.34026C-0.0147052 9.06643 0.000930124 10.777 0.000930124 12.5C0.000930124 14.223 -0.0147052 15.9367 0.0822335 17.6597C0.179172 19.6611 0.635722 21.4373 2.09918 22.9008C3.56577 24.3674 5.33881 24.8208 7.34013 24.9178C9.06626 25.0147 10.7768 24.9991 12.4998 24.9991C14.2259 24.9991 15.9364 25.0147 17.6594 24.9178C19.6607 24.8208 21.4369 24.3643 22.9004 22.9008C24.3669 21.4342 24.8204 19.6611 24.9173 17.6597C25.0174 15.9367 24.9986 14.2262 24.9986 12.5ZM12.4966 18.9137C8.94743 18.9137 6.08305 16.0493 6.08305 12.5C6.08305 8.95073 8.94743 6.08629 12.4966 6.08629C16.0458 6.08629 18.9102 8.95073 18.9102 12.5C18.9102 16.0493 16.0458 18.9137 12.4966 18.9137ZM19.1729 7.3215C18.3442 7.3215 17.675 6.6523 17.675 5.82361C17.675 4.99493 18.3442 4.32573 19.1729 4.32573C20.0016 4.32573 20.6708 4.99493 20.6708 5.82361C20.671 6.02039 20.6324 6.21528 20.5572 6.39712C20.4821 6.57897 20.3717 6.74419 20.2326 6.88333C20.0935 7.02247 19.9282 7.1328 19.7464 7.20798C19.5646 7.28317 19.3697 7.32175 19.1729 7.3215Z" fill="#E0E0E0"/>
+                        </svg>
+                    </a>
+                </div>
+                <a href="tel:89209994350" class="footer-tel" >
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.4999 19.75H17.3724C2.63494 18.9025 0.542441 6.4675 0.249941 2.6725C0.226373 2.37744 0.261258 2.08062 0.352598 1.79906C0.443937 1.5175 0.589936 1.25673 0.78223 1.03169C0.974523 0.80665 1.20933 0.621766 1.4732 0.48763C1.73707 0.353493 2.02481 0.272741 2.31994 0.250001H6.45244C6.75286 0.24971 7.04644 0.339633 7.29517 0.508122C7.54389 0.676611 7.73629 0.915903 7.84744 1.195L8.98744 4C9.09721 4.27266 9.12444 4.57156 9.06578 4.85957C9.00711 5.14758 8.86512 5.412 8.65744 5.62L7.05994 7.2325C7.30948 8.65056 7.98858 9.95775 9.00536 10.9772C10.0221 11.9967 11.3275 12.6792 12.7449 12.9325L14.3724 11.32C14.5836 11.1146 14.8505 10.9759 15.1399 10.9213C15.4293 10.8666 15.7284 10.8983 15.9999 11.0125L18.8274 12.145C19.1023 12.2597 19.3369 12.4536 19.5012 12.702C19.6654 12.9504 19.752 13.2422 19.7499 13.54V17.5C19.7499 18.0967 19.5129 18.669 19.0909 19.091C18.669 19.5129 18.0967 19.75 17.4999 19.75ZM2.49994 1.75C2.30103 1.75 2.11026 1.82902 1.96961 1.96967C1.82896 2.11032 1.74994 2.30109 1.74994 2.5V2.56C2.09494 7 4.30744 17.5 17.4549 18.25C17.5535 18.2561 17.6522 18.2427 17.7456 18.2105C17.8389 18.1783 17.925 18.1281 17.9988 18.0626C18.0727 17.9971 18.1329 17.9176 18.176 17.8288C18.2191 17.74 18.2442 17.6436 18.2499 17.545V13.54L15.4224 12.4075L13.2699 14.545L12.9099 14.5C6.38494 13.6825 5.49994 7.1575 5.49994 7.09L5.45494 6.73L7.58494 4.5775L6.45994 1.75H2.49994Z" fill="white"/>
+                    </svg>
+                    <span>8 920 999 43 50</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

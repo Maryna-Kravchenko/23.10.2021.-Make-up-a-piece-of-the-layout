@@ -1,0 +1,1359 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* line 171, ../../ДЗ 10/assets/scss/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 175, ../../ДЗ 10/assets/scss/style.scss */
+body {
+  background-color: #E5E5E5;
+  font-family: 'Gilroy', sans-serif;
+}
+
+/* line 180, ../../ДЗ 10/assets/scss/style.scss */
+.header {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05), inset 0px -5px 15px rgba(255, 255, 255, 0.44);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 185, ../../ДЗ 10/assets/scss/style.scss */
+.header-wrapper {
+  display: block;
+  width: 1318px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 191, ../../ДЗ 10/assets/scss/style.scss */
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 3px;
+}
+
+/* line 196, ../../ДЗ 10/assets/scss/style.scss */
+.header-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 201, ../../ДЗ 10/assets/scss/style.scss */
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 205, ../../ДЗ 10/assets/scss/style.scss */
+.call-us {
+  text-decoration: none;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* line 212, ../../ДЗ 10/assets/scss/style.scss */
+.call-us svg {
+  margin-right: 11px;
+}
+
+/* line 215, ../../ДЗ 10/assets/scss/style.scss */
+.call-us span {
+  align-self: flex-start;
+}
+
+/* line 220, ../../ДЗ 10/assets/scss/style.scss */
+.shopping-card {
+  text-decoration: none;
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+  margin-left: 63px;
+}
+
+/* line 227, ../../ДЗ 10/assets/scss/style.scss */
+.account {
+  margin-left: 23px;
+}
+
+/* line 231, ../../ДЗ 10/assets/scss/style.scss */
+.buy {
+  width: 20px;
+  height: 20px;
+  background-color: #06D10E;
+  border-radius: 50%;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  color: #FFFFFF;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: -30%;
+  right: -30%;
+}
+
+/* line 248, ../../ДЗ 10/assets/scss/style.scss */
+.nav-link {
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 18px;
+  color: #4F4F4F;
+  margin-right: 38px;
+}
+
+/* line 254, ../../ДЗ 10/assets/scss/style.scss */
+.nav-link svg {
+  vertical-align: middle;
+  margin-left: 3px;
+}
+
+/* line 260, ../../ДЗ 10/assets/scss/style.scss */
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+/* line 265, ../../ДЗ 10/assets/scss/style.scss */
+.search input {
+  width: 345px;
+  height: 54px;
+  background-color: #F2F2F2;
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #828282;
+  padding-left: 20px;
+  padding-right: 45px;
+}
+
+/* line 277, ../../ДЗ 10/assets/scss/style.scss */
+.search input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  color: #828282;
+}
+
+/* line 282, ../../ДЗ 10/assets/scss/style.scss */
+.search label {
+  position: relative;
+}
+
+/* line 284, ../../ДЗ 10/assets/scss/style.scss */
+.search label svg {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 294, ../../ДЗ 10/assets/scss/style.scss */
+.section-wrapper {
+  display: block;
+  width: 1318px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 301, ../../ДЗ 10/assets/scss/style.scss */
+.section-catalog {
+  width: 100%;
+  margin-top: 75px;
+}
+
+/* line 304, ../../ДЗ 10/assets/scss/style.scss */
+.section-catalog-name {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+/* line 308, ../../ДЗ 10/assets/scss/style.scss */
+.section-catalog-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 311, ../../ДЗ 10/assets/scss/style.scss */
+.section-catalog-card {
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 427px;
+  border: 1px solid #F2F2F2;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  box-shadow: -8px -8px 15px #FFFFFF, 4px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* line 319, ../../ДЗ 10/assets/scss/style.scss */
+.section-catalog-card-photo img {
+  height: 211px;
+  width: 387px;
+  border-radius: 10px;
+}
+
+/* line 325, ../../ДЗ 10/assets/scss/style.scss */
+.section-catalog-card-name {
+  margin-bottom: 0;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+/* line 329, ../../ДЗ 10/assets/scss/style.scss */
+.section-catalog-card-text {
+  margin-bottom: 0;
+  color: #828282;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* line 335, ../../ДЗ 10/assets/scss/style.scss */
+.section-catalog-card-detail-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* line 338, ../../ДЗ 10/assets/scss/style.scss */
+.section-catalog-card-detail-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 12px 32px;
+  background: #3FCF5E;
+  border: 1px solid rgba(110, 230, 144, 0.53);
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+/* line 344, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix {
+  width: 100%;
+  margin-top: 80px;
+}
+
+/* line 347, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-name-cont {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* line 350, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-name {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* line 353, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-selects {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 356, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-button-more {
+  margin-right: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #219653;
+}
+
+/* line 359, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 362, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-card {
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 315px;
+  background-color: #F9F9F9;
+  border: 1px solid #F2F2F2;
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px 0px #0000000D, -8px -8px 15px 0px #FFFFFF;
+  position: relative;
+}
+
+/* line 370, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-card-new {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  margin: 0;
+  padding: 9px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+/* line 376, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-card-photo img {
+  height: 227px;
+  width: 275px;
+  border-radius: 5px;
+}
+
+/* line 382, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-card-name {
+  margin-bottom: 0;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 22px;
+  line-height: 1.3;
+}
+
+/* line 387, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-card-text {
+  margin-bottom: 0;
+  color: #828282;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 393, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-card-price {
+  margin-bottom: 0;
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* line 400, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-one {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+/* line 402, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-one input[type=radio] {
+  display: none;
+}
+
+/* line 405, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-one label {
+  cursor: pointer;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4F4F4F;
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  width: 68px;
+  height: 29px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+/* line 408, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-one input[type=radio][name=mix-pack-one]:checked + label {
+  background: #FFFFFF;
+  border: 1px solid #3ECF5E;
+}
+
+/* line 412, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-two {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+/* line 414, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-two input[type=radio] {
+  display: none;
+}
+
+/* line 417, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-two label {
+  cursor: pointer;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4F4F4F;
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  width: 68px;
+  height: 29px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+/* line 420, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-two input[type=radio][name=mix-pack-two]:checked + label {
+  background: #FFFFFF;
+  border: 1px solid #3ECF5E;
+}
+
+/* line 424, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-three {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+/* line 426, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-three input[type=radio] {
+  display: none;
+}
+
+/* line 429, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-three label {
+  cursor: pointer;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4F4F4F;
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  width: 68px;
+  height: 29px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+/* line 432, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-three input[type=radio][name=mix-pack-three]:checked + label {
+  background: #FFFFFF;
+  border: 1px solid #3ECF5E;
+}
+
+/* line 436, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-four {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+/* line 438, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-four input[type=radio] {
+  display: none;
+}
+
+/* line 441, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-four label {
+  cursor: pointer;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4F4F4F;
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  width: 68px;
+  height: 29px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+/* line 444, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-radio-four input[type=radio][name=mix-pack-four]:checked + label {
+  background: #FFFFFF;
+  border: 1px solid #3ECF5E;
+}
+
+/* line 448, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-card-detail-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* line 451, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-card-detail-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 12px 32px;
+  background: #3FCF5E;
+  border: 1px solid rgba(110, 230, 144, 0.53);
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+/* line 454, ../../ДЗ 10/assets/scss/style.scss */
+.section-mix-card-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 46px;
+  border-radius: 10px;
+  border: 1px solid #BDBDBD;
+  background-color: #FFFFFF;
+}
+
+/* line 459, ../../ДЗ 10/assets/scss/style.scss */
+.section-bird {
+  width: 100%;
+  margin-top: 72px;
+}
+
+/* line 462, ../../ДЗ 10/assets/scss/style.scss */
+.section-bird-name-cont {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* line 465, ../../ДЗ 10/assets/scss/style.scss */
+.section-bird-name {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* line 468, ../../ДЗ 10/assets/scss/style.scss */
+.section-bird-selects {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 471, ../../ДЗ 10/assets/scss/style.scss */
+.section-bird-button-more {
+  margin-right: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #219653;
+}
+
+/* line 474, ../../ДЗ 10/assets/scss/style.scss */
+.section-bird-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 477, ../../ДЗ 10/assets/scss/style.scss */
+.section-bird-card {
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 315px;
+  border: 1px solid #F2F2F2;
+  border-radius: 20px;
+  background-color: #F9F9F9;
+  box-shadow: -8px -8px 20px #FFFFFF, 8px 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* line 485, ../../ДЗ 10/assets/scss/style.scss */
+.section-bird-card-photo img {
+  height: 227px;
+  width: 275px;
+  border-radius: 10px;
+}
+
+/* line 491, ../../ДЗ 10/assets/scss/style.scss */
+.section-bird-card-name {
+  margin-bottom: 0;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 22px;
+}
+
+/* line 495, ../../ДЗ 10/assets/scss/style.scss */
+.section-bird-card-text {
+  margin-bottom: 0;
+  color: #828282;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 501, ../../ДЗ 10/assets/scss/style.scss */
+.section-bird-card-detail-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* line 504, ../../ДЗ 10/assets/scss/style.scss */
+.section-bird-card-detail-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 12px 32px;
+  background: #3FCF5E;
+  border: 1px solid rgba(110, 230, 144, 0.53);
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+/* line 510, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains {
+  width: 100%;
+  margin-top: 106px;
+}
+
+/* line 513, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-name-cont {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* line 516, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-name {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* line 519, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-selects {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 522, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-button-more {
+  margin-right: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #219653;
+}
+
+/* line 525, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 528, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-card {
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 315px;
+  background-color: #F9F9F9;
+  border: 1px solid #F2F2F2;
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px 0px #0000000D, -8px -8px 15px 0px #FFFFFF;
+  position: relative;
+}
+
+/* line 536, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-card-sale {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  margin: 0;
+  padding: 9px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #FFFFFF;
+  border: 1px solid #3FCF5E;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.05);
+  color: #222222;
+}
+
+/* line 544, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-card-photo img {
+  height: 227px;
+  width: 275px;
+  border-radius: 5px;
+}
+
+/* line 550, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-card-name {
+  margin-bottom: 0;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 22px;
+  line-height: 1.3;
+}
+
+/* line 555, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-card-text {
+  margin-bottom: 0;
+  color: #828282;
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 561, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-card-price {
+  margin-bottom: 0;
+  margin-top: 28px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* line 568, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-one {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+/* line 570, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-one input[type=radio] {
+  display: none;
+}
+
+/* line 573, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-one label {
+  cursor: pointer;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4F4F4F;
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  width: 68px;
+  height: 29px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+/* line 576, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-one input[type=radio][name=grains-pack-one]:checked + label {
+  background: #FFFFFF;
+  border: 1px solid #3ECF5E;
+}
+
+/* line 580, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-two {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+/* line 582, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-two input[type=radio] {
+  display: none;
+}
+
+/* line 585, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-two label {
+  cursor: pointer;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4F4F4F;
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  width: 68px;
+  height: 29px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+/* line 588, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-two input[type=radio][name=grains-pack-two]:checked + label {
+  background: #FFFFFF;
+  border: 1px solid #3ECF5E;
+}
+
+/* line 592, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-three {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+/* line 594, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-three input[type=radio] {
+  display: none;
+}
+
+/* line 597, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-three label {
+  cursor: pointer;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4F4F4F;
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  width: 68px;
+  height: 29px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+/* line 600, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-three input[type=radio][name=grains-pack-three]:checked + label {
+  background: #FFFFFF;
+  border: 1px solid #3ECF5E;
+}
+
+/* line 604, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-four {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+/* line 606, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-four input[type=radio] {
+  display: none;
+}
+
+/* line 609, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-four label {
+  cursor: pointer;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4F4F4F;
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  width: 68px;
+  height: 29px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+/* line 612, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-radio-four input[type=radio][name=grains-pack-four]:checked + label {
+  background: #FFFFFF;
+  border: 1px solid #3ECF5E;
+}
+
+/* line 616, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-card-detail-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* line 619, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-card-detail-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 12px 32px;
+  background: #3FCF5E;
+  border: 1px solid rgba(110, 230, 144, 0.53);
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+/* line 622, ../../ДЗ 10/assets/scss/style.scss */
+.section-grains-card-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 46px;
+  border-radius: 10px;
+  border: 1px solid #BDBDBD;
+  background-color: #FFFFFF;
+}
+
+/* line 627, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders {
+  width: 100%;
+  margin-top: 72px;
+}
+
+/* line 630, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders-name-cont {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* line 633, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders-name {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* line 636, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders-selects {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 639, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders-button-more {
+  margin-right: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #219653;
+}
+
+/* line 642, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 645, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders-card {
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 315px;
+  border: 1px solid #F2F2F2;
+  border-radius: 20px;
+  background-color: #F9F9F9;
+  box-shadow: -8px -8px 20px #FFFFFF, 8px 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* line 653, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders-card-photo img {
+  height: 227px;
+  width: 275px;
+  border-radius: 10px;
+}
+
+/* line 659, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders-card-name {
+  margin-bottom: 0;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 22px;
+  line-height: 1.3;
+}
+
+/* line 664, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders-card-text {
+  margin-bottom: 0;
+  color: #828282;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 670, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders-card-price {
+  margin-bottom: 0;
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* line 676, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders-card-detail-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* line 679, ../../ДЗ 10/assets/scss/style.scss */
+.section-feeders-card-detail-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 12px 32px;
+  background: #3FCF5E;
+  border: 1px solid rgba(110, 230, 144, 0.53);
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+/* line 685, ../../ДЗ 10/assets/scss/style.scss */
+.donation {
+  width: 100%;
+  margin-top: 152px;
+  padding-top: 72px;
+  padding-bottom: 89px;
+  background-color: #3ECF5E;
+}
+
+/* line 691, ../../ДЗ 10/assets/scss/style.scss */
+.donation-wrapper {
+  display: block;
+  width: 1318px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 697, ../../ДЗ 10/assets/scss/style.scss */
+.donation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 700, ../../ДЗ 10/assets/scss/style.scss */
+.donation-form h2 {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+/* line 709, ../../ДЗ 10/assets/scss/style.scss */
+.donation-radio {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+/* line 712, ../../ДЗ 10/assets/scss/style.scss */
+.donation-radio input {
+  display: none;
+}
+
+/* line 715, ../../ДЗ 10/assets/scss/style.scss */
+.donation-radio label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 7px;
+  margin-left: 34px;
+}
+
+/* line 725, ../../ДЗ 10/assets/scss/style.scss */
+.donation-radio label:first-of-type {
+  margin-left: 0;
+}
+
+/* line 728, ../../ДЗ 10/assets/scss/style.scss */
+.donation-radio input[type=radio][name=donation]:checked + label {
+  background-image: url(../images/stroke-checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+/* line 734, ../../ДЗ 10/assets/scss/style.scss */
+.donation-radio-text {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+/* line 745, ../../ДЗ 10/assets/scss/style.scss */
+.donation-amount {
+  margin-top: 26px;
+}
+
+/* line 747, ../../ДЗ 10/assets/scss/style.scss */
+.donation-amount input {
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  background-color: #3ECF5E;
+  width: 235px;
+  padding: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #7EFF9A;
+  margin-right: 15px;
+}
+
+/* line 758, ../../ДЗ 10/assets/scss/style.scss */
+.donation-amount input::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #7EFF9A;
+}
+
+/* line 763, ../../ДЗ 10/assets/scss/style.scss */
+.donation-amount-link {
+  padding: 15px 40px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333333;
+}
+
+/* line 775, ../../ДЗ 10/assets/scss/style.scss */
+.select-gift {
+  position: relative;
+}
+
+/* line 777, ../../ДЗ 10/assets/scss/style.scss */
+.select-gift-wrapper {
+  background-image: url(../images/donation-gift.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 303px;
+  height: 401px;
+  right: 180px;
+  bottom: -89px;
+  padding-top: 97px;
+  padding-left: 37px;
+}
+
+/* line 789, ../../ДЗ 10/assets/scss/style.scss */
+.select-gift-wrapper h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #4F4F4F;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 797, ../../ДЗ 10/assets/scss/style.scss */
+.select-gift-radio {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+/* line 800, ../../ДЗ 10/assets/scss/style.scss */
+.select-gift-radio input {
+  display: none;
+}
+
+/* line 803, ../../ДЗ 10/assets/scss/style.scss */
+.select-gift-radio label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #3ECF5E;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+/* line 813, ../../ДЗ 10/assets/scss/style.scss */
+.select-gift-radio input[type=radio][name=gifts]:checked + label {
+  background-image: url(../images/stroke-checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+/* line 819, ../../ДЗ 10/assets/scss/style.scss */
+.select-gift-radio-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #4F4F4F;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* line 828, ../../ДЗ 10/assets/scss/style.scss */
+.select-gift-note {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: #4F4F4F;
+  vertical-align: top;
+  line-height: 1.3;
+}
+
+/* line 840, ../../ДЗ 10/assets/scss/style.scss */
+.gifts-radio {
+  display: inline-block;
+  margin-top: 35px;
+}
+
+/* line 846, ../../ДЗ 10/assets/scss/style.scss */
+.footer {
+  background-color: #333333;
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+/* line 850, ../../ДЗ 10/assets/scss/style.scss */
+.footer-wrapper {
+  display: block;
+  width: 1318px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 856, ../../ДЗ 10/assets/scss/style.scss */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 860, ../../ДЗ 10/assets/scss/style.scss */
+.footer-action {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* line 863, ../../ДЗ 10/assets/scss/style.scss */
+.footer-action a:not(:last-child) {
+  margin-right: 45px;
+}
+
+/* line 867, ../../ДЗ 10/assets/scss/style.scss */
+.footer-pay {
+  text-decoration: none;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+/* line 871, ../../ДЗ 10/assets/scss/style.scss */
+.footer-delivery {
+  text-decoration: none;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+/* line 876, ../../ДЗ 10/assets/scss/style.scss */
+.footer-soсial a:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* line 880, ../../ДЗ 10/assets/scss/style.scss */
+.footer-tel {
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding-top: 3px;
+}
+
+/* line 886, ../../ДЗ 10/assets/scss/style.scss */
+.footer-tel svg {
+  margin-right: 6px;
+}
+
+/* line 889, ../../ДЗ 10/assets/scss/style.scss */
+.footer-tel span {
+  vertical-align: top;
+}
+
+/*# sourceMappingURL=style.css.map */
